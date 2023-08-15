@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Etch a Sketch</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+   
+        <div class="flex-container">
+            <div class="title">
+                <h1>Etch-a-Sketch</h1>
+            </div>
+            <div class="mode">Mode: Coloring</div>
+            <div class="content">
+                <div class="board"></div>
+                <div class="buttons">
+                    <button onclick="changeColor('black')">Black</button>
+                    <button onclick="changeColor('white')">Erasor</button>
+                    <button onclick="changeColor('gray')">Gray</button>
+                    <button onclick="changeColor('random')">Random</button>
+                    <button onclick="resetBoard()">Reset</button>
+                </div>
+                <div>
+                    <!--calls the function changeSize passing in the value that is input here-->
+                    <input type="text" placeholder="Size of the Board" value="16" onchange="changeSize(this.value)">
+                    <button>Set Size</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js" async defer></script>
+    </body>
+</html>

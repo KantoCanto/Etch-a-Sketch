@@ -1,0 +1,9 @@
+body{
+    background-color: antiquewhite;
+}
+
+.board{
+    width: 500px;
+    height: 500px;
+    display: grid;
+}
