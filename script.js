@@ -32,6 +32,7 @@ function populateBoard(size){
   }
 }
 
+//this will create a deafult board of 16 x 16, it can later be changed by the user
 populateBoard(16);
 
 //will take in the input for the size of the board, which will be passed to the populateBoard function
